@@ -9,4 +9,4 @@
 -git push -u origin main (nos va a enviar los cambios al repositorio remoto)
 
 
-Listo, ya tenemos repositorio local y remoto.
+Listo, ya tenemos nuestro repo en Github con lo que hayamos modificado y subido.
