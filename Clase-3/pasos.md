@@ -10,3 +10,11 @@
 
 
 Listo, ya tenemos nuestro repo en Github con lo que hayamos modificado y subido.
+
+  #Si estoy actualizando :
+
+    -git add .
+    -git commit -m 'algún comentario'
+    -git push
+
+----------------Ahora vamos a intentar pushear-----
