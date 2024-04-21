@@ -1,5 +1,4 @@
 **Si empezamos desde 0:**
-
 -git init
 -git add .
 -git commit -m 'algún comentario'
@@ -8,10 +7,11 @@
 -git remote add origin https (...etc...etc nos va a conectar con el repositorio remoto que ya creamos en Github)
 -git push -u origin main (nos va a enviar los cambios al repositorio remoto)
 
-
 Listo, ya tenemos nuestro repo en Github con lo que hayamos modificado y subido.
 
-  #Si estoy actualizando :
+ **Podemos usar git status para tener una información detallada del estado de nuestro repositorio**
+
+  # Si estoy actualizando :
 
     -git add .
     -git commit -m 'algún comentario'
