@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form>
+        <div>
+            <label for="username">Ingresa tu nombre de usuario:</label>
+            <input type="text" name="username" id="username" placeholder="John Doe">
+            <span style="color: red" > Ingresa un dato válido </span>
+        </div>
+        <div>
+            <label for="password">Ingresa tu contraseña: </label>
+            <input type="text" name="contraseña" id="password">
+        </div>
+        <div>
+            <label for="email">Ingresa tu Email:</label>
+            <input type="email"  name="email" id="email">
+        </div>
+        <div>
+        <div>
+            <label for="pais">Selecciona un país:</label>    
+            <select name="pais" id="pais">
+                <option value="AR">Argentina</option>
+                <option value="FRN">Francia</option>
+                <option value="NO" selected disabled> No seleccionado</option>
+            </select>
+        </div>
+        <div>
+            <label for="pais-1">Seleccione un país
+                <span> Argentina</span><input type="radio" name="pais-1" id="ar">
+                <span> Francia</span><input type="radio" name="pais-1" id="fr">
+            </label>
+            <div>
+                <label for="mensaje">Escribe tu mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Hola a todos!!"></textarea>
+            </div>
+
+        </div>
+            <input type="submit" value="Confirmar">
+            <button type="submit">Enviar</button>          
+        </div>
+    </form>
+</body>
+
+</html>
