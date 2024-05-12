@@ -1,0 +1,95 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+
+/*VARIABLE*/
+:root{
+    --color-texto: #3a3c3b;
+    --fuente-principal /*--ff-primary*/:  "DM Sans", sans-serif;
+}
+
+*{
+    font-family: "DM Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: rgb(227, 197, 156);
+
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    gap : 15px;
+}
+
+.logo-container .logo{
+    width: 140px;
+
+}
+
+
+.logo-container .selector .lenguaje{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container .selector-lenguaje .pais{
+    width: 35px;
+
+
+}
+
+
+header nav{
+    display: flex;
+    
+}
+
+nav .links-container{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    
+    
+
+}
+
+nav .links-container .link-item{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+nav .links-container .link-item .link{
+    text-decoration: none;
+    color: var(--color-texto)
+
+}
+
+nav .links-container .link-item .btn-link{
+    border: 2px solid var(--color-texto);
+    padding: 7px;
+    border-radius: 5px;
+    
+}

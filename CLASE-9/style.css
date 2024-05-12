@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");    
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* color card style: */
+
+
+.colors-cards{
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    width: calc( 250px * 4 + 20px * 3 + 20px *2 );
+
+}
+
+
+.color-card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap:15px;
+    
+
+}
+
+.color-card .colors{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    background-color: aqua;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+.color-card .colors .color:nth-child(1){
+    width: 100%;
+    height: 36%;
+    background-color: #153448;
+}
+
+.color-card .colors .color:nth-child(2){
+    width: 100%;
+    height: 29%;
+    background-color: #3C5B6F;
+}
+
+.color-card .colors .color:nth-child(3){
+    width: 100%;
+    height: 20%;
+    background-color: #005B41;
+}
+
+.color-card .colors .color:nth-child(4){
+    width: 100%;
+    background-color: #008170;
+}
+
+.color-card .color-card-controls{
+
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    height: 50px;
+    align-items: center;
+    
+
+}
+
+.color-card .color-card-controls .btn-like{
+    height: 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid  rgba(0, 0, 0, 0.132);
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: #9d9d9d;
+
+}
+
+.color-card .color-card-controls .time{
+    color: #9d9d9d;
+    font-size: 14px;
+
+}
+
+/*color card style END */
