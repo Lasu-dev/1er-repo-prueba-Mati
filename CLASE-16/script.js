@@ -21,7 +21,7 @@ console.log(esVocal("b")); //false
 //const nombres = ['pepe', 'juan', 'maria']
 
 /*por cada nombre quiero que aparezca un  mensaje por consola diciendo 'hola {nombre}'
-NECESITAMOS UN FOR, QE SE REPITA LA CANTIDAD DE VECES COMO ELEMENTOS TENGA EN MI ARRAY
+NECESITAMOS UN FOR, QUE SE REPITA LA CANTIDAD DE VECES COMO ELEMENTOS TENGA EN MI ARRAY
 console.log('Hola ' + nombres[0])
 console.log('Hola ' + nombres[1])
 console.log('Hola ' + nombres[2])
@@ -42,9 +42,9 @@ SIN NECESIDAD DE QUE NOSOTROS SEPAMOS LA CANTIDAD DE ELEMENTOS QUE TENEMOS DENTR
 /*for(let index=0; index < nombres.length; index=index+1){
     let nombre = nombres[index]     //Notemos que el nombre de la variable en la cual guardamos cada elemento es el singular  ..
     console.log('Hola ' + nombre)   //del nombre donde tenemos el array de todos los elementos--
-}
+}*/
 
-/*const carrito=[
+const carrito=[
     {
         nombre: 'tv samsung',
         precio: 300,
@@ -55,17 +55,17 @@ SIN NECESIDAD DE QUE NOSOTROS SEPAMOS LA CANTIDAD DE ELEMENTOS QUE TENEMOS DENTR
         precio: 30,
         cantidad: 1
     },
-]*/
+]
 /* Por cada elemento de mi carrito mostrar por consola:
 Has comprado el producto: {producto.nombre} x {producto.cantidad} a un precio unitario de ${producto.precio}
 */ 
 /*for(let index = 0; index < carrito.length; index=index+1){
     const producto = carrito[index]
-    console.log(carrito)
-
+    //console.log(carrito)
     console.log ('Has comprado el producto: ' + producto.nombre + ' x ' + producto.cantidad + ' a un precio por unidad de: $ ' + producto.precio)
-}
 
+}*/
+/*
 let sumatoriaEdad = 0
 const personajes =[
     {
@@ -83,21 +83,21 @@ const personajes =[
         apellido:'rodriguez',
         edad: 35
     },
-]
+]*/
 
 /*
 Por cada personaje mostrar el siguente mensaje por consola
 'Hola mi nombre es {personaje.nombre} {personaje.apellido} y tengo {personaje.edad} años'
 Opcional:
-Al finalizar el recorrido mostar por consola 'total de edades: {sumatoria de las edades de los usuarios}'
+Al finalizar el recorrido mostrar por consola 'total de edades: {sumatoria de las edades de los usuarios}'
 */
-
-/*for(let index = 0; index < personajes.length; index=index+1){
+/*
+for(let index = 0; index < personajes.length; index=index+1){
     const personaje = personajes[index]
     console.log('Hola mi nombre es: ' + personaje.nombre + ' ' + personaje.apellido + ' y tengo ' + personaje.edad + ' años de edad')
     sumatoriaEdad = sumatoriaEdad + personaje.edad  //sumatoriaEdad va a tomar el valor de si misma (0) + la edad de cada personaje,
     console.log('La sumatoria de todas las edades es de: ' + sumatoriaEdad + ' años') //ESTA DENTRO DEL FOR, O SEA, RECORRE EL ARRAY TAMBIEN.
-}                                                                                       
+}  */                                                                                     
 
 
 
@@ -109,7 +109,7 @@ Al finalizar el recorrido mostar por consola 'total de edades: {sumatoria de las
 //SE HACE LO MISMO PERO SIMPLIFICADO CON EL FOR OF
 for(const personaje of personajes){ //recorre el array personajes y crea la variable personaje donde guarda cada elemento/objeto del array
     console.log(personaje)
-}
+}*/
 
 /*ir al ejercicio anterior y hacerlo con for of*/
 
@@ -134,27 +134,30 @@ for(producto of carrito){
 //especificarlo con el for, no nos sirve el for of
 
 //__________________---------FOR IN----------___________________( recorre las propiedades/atributos de un objeto, las keys)
-/*
+
 const datos ={
-    nombre: 'pepe',           //1°
+    nombre: 'pepe',          
     apellido: 'suarez',
-    dni: 34456765
+    dni: 34456765,
 }
-let resultado=''  //vamos a crear un string, una plantilla de resultado que va a ser = a '' (comillas vacías) ACUMULADOR DE STRING!!!!         4°
-for(let propiedad in datos){//me esta creando la variable propiedad donde se va a guardar cada key (nombre, apellido, dni)                     2°
-    resultado = resultado + '\n' + propiedad + ': ' + datos[propiedad] //datos[propiedad]me está entrando al valor de cada propiedad del objeto 5°
+let resultado = ' '  //vamos a crear un string, una plantilla de resultado que va a ser = a '' (comillas vacías) ACUMULADOR DE STRINGS!!!!       
+for(let propiedad in datos){//me esta creando la variable propiedad donde se va a guardar cada key (nombre, apellido, dni)                   
+    resultado = resultado + '\n' + propiedad + ': ' + datos[propiedad]//datos[propiedad]está entrando al valor de cada propiedad del objeto 
                                                                 //en resultado voy a acumular cada iteración y voy a mostrar cada propiedad 
-                                                                //con su dato: nombre: pepe
-                                                                             //apellido: suarez
-                                                                             //dni: 34456765
-    console.log(propiedad) //me va a mostrar las propiedades del objeto: nombre                                                                3°
-                                                                     // apellido
-                                                                     // dni
-}   */
+                                                                //con su valor: nombre: pepe
+                                                                //apellido: suarez
+}                                                                             //dni: 34456765
+console.log(propiedad) //me va a mostrar las propiedades del objeto: nombre                                                          
+                                                                  // apellido
+                                                                  // dni
+console.log(resultado) ////me va a mostrar las propiedades del objeto y sus valores: nombre : pepe                                                             
+                                                                                  // apellido : suarez
+                                                                                  // dni: 34456765
 
 //_______________________------MÉTODOS AVANZADOS DE ARRAYS------___________________
 
-//Aprender solo como se escribe, y como utilizarlos, mas adelante sabremos como funcionan., le decimos avanzado a un método que recibe una callback
+//(Aprender solo la sintaxis, y como y cuando utilizarlos, mas adelante sabremos como funcionan)
+//Le decimos avanzado a un método que recibe una callback
 
 const personajes = [
     {
@@ -169,9 +172,9 @@ const personajes = [
     },
     {
         nombre: 'ezequiel',
-        apellido: 'rodrigez',
+        apellido: 'rodriguez',
         edad: 35
-    },
+    }
 ]
 
 
@@ -284,6 +287,7 @@ for (const personaje of personajes){
     if (personaje.edad >= 18){
         personajesMayores.push(personaje)  //--------pone los elementos que cumplan la condición al final de array
     }
+    console.log(personajesMayores)
 }
 
 //.filter (como todos los demás métodos) es una forma nativa que tiene JS para ya tener resuelto con un method algo que, de otra
@@ -359,4 +363,6 @@ investigar:
 .every() = sirve para saber si todos los elementos cumplen con x condición.
 .findIndex() = sirve para buscar el index de x elemento.
 */
+
+
 
