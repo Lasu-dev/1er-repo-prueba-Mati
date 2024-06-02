@@ -8,13 +8,13 @@
         return false;
     }
 }*/ //ESTO VA A FUNCIONAR, PERO SE PUEDE SIMPLIFICAR, OPTIMIZAR:
-function esVocal(letra){
+/*function esVocal(letra){
     const vocales = ['a', 'e', 'i','o', 'u']
     return vocales.includes(letra);
 }
 //EJEMPLO DE USO:
 console.log(esVocal("a")); //true
-console.log(esVocal("b")); //false
+console.log(esVocal("b")); //false*/
 
 
 
@@ -44,7 +44,7 @@ SIN NECESIDAD DE QUE NOSOTROS SEPAMOS LA CANTIDAD DE ELEMENTOS QUE TENEMOS DENTR
     console.log('Hola ' + nombre)   //del nombre donde tenemos el array de todos los elementos--
 }*/
 
-const carrito=[
+/*const carrito=[
     {
         nombre: 'tv samsung',
         precio: 300,
@@ -55,7 +55,7 @@ const carrito=[
         precio: 30,
         cantidad: 1
     },
-]
+]*/
 /* Por cada elemento de mi carrito mostrar por consola:
 Has comprado el producto: {producto.nombre} x {producto.cantidad} a un precio unitario de ${producto.precio}
 */ 
@@ -135,7 +135,7 @@ for(producto of carrito){
 
 //__________________---------FOR IN----------___________________( recorre las propiedades/atributos de un objeto, las keys)
 
-const datos ={
+/*const datos ={
     nombre: 'pepe',          
     apellido: 'suarez',
     dni: 34456765,
@@ -147,10 +147,10 @@ for(let propiedad in datos){//me esta creando la variable propiedad donde se va 
                                                                 //con su valor: nombre: pepe
                                                                 //apellido: suarez
 }                                                                             //dni: 34456765
-console.log(propiedad) //me va a mostrar las propiedades del objeto: nombre                                                          
+//console.log(propiedad) //me va a mostrar las propiedades del objeto: nombre                                                          
                                                                   // apellido
                                                                   // dni
-console.log(resultado) ////me va a mostrar las propiedades del objeto y sus valores: nombre : pepe                                                             
+console.log(resultado)*/ ////me va a mostrar las propiedades del objeto y sus valores: nombre : pepe                                                             
                                                                                   // apellido : suarez
                                                                                   // dni: 34456765
 
@@ -159,7 +159,7 @@ console.log(resultado) ////me va a mostrar las propiedades del objeto y sus valo
 //(Aprender solo la sintaxis, y como y cuando utilizarlos, mas adelante sabremos como funcionan)
 //Le decimos avanzado a un método que recibe una callback
 
-const personajes = [
+/*const personajes = [
     {
         nombre: 'pepe',
         apellido: 'suarez',
@@ -174,6 +174,11 @@ const personajes = [
         nombre: 'ezequiel',
         apellido: 'rodriguez',
         edad: 35
+    },
+    {
+        nombre: 'catalina',
+        apellido:'perez',
+        edad: 15
     }
 ]
 
@@ -199,8 +204,8 @@ personajes.filter(function(personaje){ //el .filter va a recibir por parámetro 
 const personajesMayoresDeEdad = personajes.filter(function(personaje){
     return personaje.edad >= 18
 })
-console.log(personajesMayoresDeEdad)
-//.filter es un método avanzado que recibe unua callback, la callback recibe al elemento.
+console.log(personajesMayoresDeEdad)*/
+//.filter es un método avanzado que recibe una callback, la callback recibe al elemento.
 //Si el valor de retorno de la callback es truly, entonces el elemento se va a agregar al array que retorna el método, 
 //Si el valor de retorno de callback es falsy, entonces se va a ignorar y se pasa al siguiente elemento.
 //FILTER SIEMPRE RETORNA UN ARRAY!!! 
@@ -234,7 +239,7 @@ console.log(personajesMayoresDeEdad)
         id: 3,
         precio: 2300
     },
-]
+]*/
 /*
 -Traer los productos que sean de precio inferior a 2950
 -Traer los productos de la marca noblex
@@ -261,17 +266,17 @@ console.log(productosTv)
 
 //______________________________________________----.find(function(parametro){})___________________________________________________
 
-//.find es un método avanzadoque recibe uun callback.  la callback recibe al elemento.
+//.find es un método avanzado que recibe una callback y la callback recibe al elemento.
 // Si el valor de retorno de la callback es truly, entonces el elemento se retornará y se cortará el find.
 // Si el valor de retorno de callback es falsy, entonces se va a ignorar, y se pasa al siguiente elemento.
 //FILTER TAMBIÉN SIEMPRE RETORNA UN ARRAY!!! 
 //si el array es vacío significa q no existe el elemento buscado.
 //.find retorna el primer elemento que cumpla con la condición, si no existe retorna undefined.
 
-const pepe = personajes.find(function(personaje){
+/*const pepe = personajes.find(function(personaje){
     return (personaje.nombre.toLowerCase() === 'pepe')
 })
-console.log(pepe)
+console.log(pepe)*/
 
 
 /* 
@@ -282,13 +287,14 @@ Si nos dicen que por cada alumno debemos enviar un email, eso es un .forEach
 TODAS ESTAS ACCIONES ADEMAS LAS PODEMOS HACER CON UN FOR (of o in) CUALQUIER METHOD DE JS ES POR DETRÁS UN FOR!! ...DE LA SIGUIENTE FORMA:
 */
 
-const personajesMayores = [] //------------------ ACUMULADOR (vacío por que aun no se cuantos personajes son mayores)
+/*const personajesMayores = [] //------------------ ACUMULADOR (vacío por que aun no se cuantos personajes son mayores)
 for (const personaje of personajes){
     if (personaje.edad >= 18){
-        personajesMayores.push(personaje)  //--------pone los elementos que cumplan la condición al final de array
+        personajesMayores.push(personaje)  //--------pone los elementos que cumplan la condición al final de array y los retorna.
     }
-    console.log(personajesMayores)
+    console.log(personajesMayores)       //en personajesMayores se guardó cada personaje que complió la condición (los que retornó.push).
 }
+console.log(personajes)   */               // me muestra el array de personajes completo.
 
 //.filter (como todos los demás métodos) es una forma nativa que tiene JS para ya tener resuelto con un method algo que, de otra
 //forma, tendríamos que utilizar más lógica y más código para resolver.
@@ -318,8 +324,8 @@ const objetos =[
 quiero que pase lo siguiente:
  1) quiero un array de strings '','',''
  2) quiero que cada que string tenga un formato determinado: ( en este caso quiero q sean divs)'<div></div>', '<div></div>','<div></div>'
- 3) quiero que cada div aparezca el nombre del objeto:'<div>vaso</div>', '<div>tornillo</div>','<div>computadora</div>'
- COMO FUNCIONA EL .MAP?:
+ 3) quiero que en cada div aparezca el nombre del objeto:'<div>vaso</div>', '<div>tornillo</div>','<div>computadora</div>'
+ 
 */
 const listaDeObjetosHTML = objetos.map(function(objeto){
     return '<div>' + objeto.nombre + '</div>' 
@@ -327,6 +333,7 @@ const listaDeObjetosHTML = objetos.map(function(objeto){
 console.log(listaDeObjetosHTML) 
 
 /*
+COMO FUNCIONA EL .MAP?:
 Va a recorrer el array y por cada elemento la callback va a ejecutarse, El valor de retorno de la callback va a ser el nuevo valor 
 que le asignamos en el return y va a agregarse al array resultante y así hasta que se terminen los elementos.
 EL .MAP MAPEA Y TRANSFORMA UN ARRAY INICIAL, EN OTRO ARRAY CON LAS CARCTERÍSTICAS QUE LE INDIQUEMOS
@@ -363,6 +370,5 @@ investigar:
 .every() = sirve para saber si todos los elementos cumplen con x condición.
 .findIndex() = sirve para buscar el index de x elemento.
 */
-
 
 
