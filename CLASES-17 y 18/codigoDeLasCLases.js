@@ -174,8 +174,8 @@ function obtenerHistorial() {
 
 
 /* Verificando que un usuario que entra por primera vez tenga un historial */
-/*
+
 if(obtenerHistorial() === null){
-    /* Si no hay historial, se guarde el historial como array vacio */
- //   localStorage.setItem('historial', JSON.stringify([]))
-//}  
+    // Si no hay historial, se guarde el historial como array vacio 
+  localStorage.setItem('historial', JSON.stringify([]))
+}
