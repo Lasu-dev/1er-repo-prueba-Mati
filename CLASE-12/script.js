@@ -106,8 +106,8 @@ Valor implicito en undefined?   SI
 
 /*Determinar el resultado y corroborar por consola.
 
-(true > true || 9) && Number(Boolean(1)) > 0 || 'pepe'
-            9      &&    true                || 'pepe'
+!  (true > true || 9) && Number(Boolean(1)) > 0 || 'pepe'
+            9      &&    1                   || 'pepe'
                                     true     || 'pepe' => true
                                             
 
@@ -137,8 +137,6 @@ console.log(nombre)  /* pepe*/
         nombre = 'juan'
     }
     console.log(nombre)
-
-
 }
 console.log(nombre)
 
@@ -152,4 +150,8 @@ leonel
 julieta
 julieta
 
+
 */ 
+Boolean(0)
+
+Boolean(1)

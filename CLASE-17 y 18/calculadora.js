@@ -408,7 +408,7 @@ elementoHistorial = {
 agregar al historial (elementoHistorial)    
 agregar el objeto al array global historial
 
-obtenerHistorial() que va a retornat el historial global
+obtenerHistorial() que va a retornar el historial global
 */
 
 let elementoHistorial = {
@@ -419,7 +419,7 @@ let elementoHistorial = {
     resultado: -10
 } 
 
-function agregarAlHistorial(){ 
+function agregarAlHistorial()  { 
     const historial = obtenerHistorial() //Acá creo la const historial y le doy el valor de array vacío que creé en el historial,
                                          // sinó donde pusheo los elementos que quiera agregar  en el historial?
     historial.push(elementoHistorial)
@@ -434,7 +434,7 @@ function obtenerHistorial(){
     
 }
 //NOs aseguramos que el usuario que entra por primera ya tenga un historial, para que?? para poder hacer el push, por que no se puede
-//úshear al historial, si no hay historial. jeje cambiamos el historial.push de la función agregarAlHistorial() por obtenerHistorial.push 
+//pushear al historial, si no hay historial. jeje cambiamos el historial.push de la función agregarAlHistorial() por obtenerHistorial.push 
 if(obtenerHistorial() === null){ //Si el historial es null significa que el ususario nunca entró antes y no tiene historial, entonces:
 
     localStorage.setItem('historial', JSON.stringify([]))//creamos un item con la key 'historial' y el valor sea un array vacío
